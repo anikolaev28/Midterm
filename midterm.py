@@ -120,7 +120,7 @@ def years_since_birthday(birthday):
     :param birthday: The birthday in the format "DD-MM-YYYY"
     :return: Number of whole years passed
     """
-    birthday = input("Enter your birthday (DD-MM-YYYY): ")
+    birthday = input("Enter your birthday (DD-MM-YYYY):")
     # Extract the birth year
     birth_year = int(birthday[-4:])  # Last 4 characters represent the year
 
@@ -131,4 +131,5 @@ def years_since_birthday(birthday):
     return current_year - birth_year - 1
 
 # Example usage
+birthday = input("Enter your birthday (DD-MM-YYYY): ")
 print("Whole years passed:", years_since_birthday(birthday))
